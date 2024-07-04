@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=420 height=672 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -22,6 +22,9 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">CryptoGame</div>
       </div>
+    </div>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 100vw; height: 100vh;"></div>
     </div>
     <script>
 
@@ -94,8 +97,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "420px";
-        canvas.style.height = "672px";
+        canvas.style.width = "1080px";
+        canvas.style.height = "1920px";
       }
 
       loadingBar.style.display = "block";
